@@ -36,3 +36,15 @@ $ pnpm prisma db seed
 - prisma
 - zod
 - ts-node
+
+## Structures
+
+```bash
+.
+├ app               # Next.js app directory
+├ lib               # 各種ライブラリのコードを配置するディレクトリ
+  └ prisma.ts       # Prismaクライアントの初期化・exportするファイル
+└ prisma            # 実行時に不要なPrismaのファイル群
+  ├ schema.prisma   # Prismaのスキーマファイル
+  └ seed.ts         # Seed用のスクリプト
+```
