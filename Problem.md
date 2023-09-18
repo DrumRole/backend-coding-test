@@ -52,7 +52,7 @@ erDiagram
 		DATETIME allocated_at
 	}
 
-	product ||--|{ inventory: ""
+	product ||--|| inventory: ""
 	inventory ||--o{ allocated_history: ""
 ```
 
